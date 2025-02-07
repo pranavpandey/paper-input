@@ -11,7 +11,6 @@ found at http://polymer.github.io/PATENTS.txt
 import '@polymer/polymer/polymer-legacy.js';
 import '@polymer/iron-flex-layout/iron-flex-layout.js';
 import '@polymer/paper-styles/default-theme.js';
-import '@polymer/paper-styles/typography.js';
 
 import {Polymer} from '@polymer/polymer/lib/legacy/polymer-fn.js';
 import {dom} from '@polymer/polymer/lib/legacy/polymer.dom.js';
@@ -154,6 +153,9 @@ Custom property | Description | Default
 `--paper-input-suffix` | Mixin applied to the input suffix | `{}`
 `--paper-input-container-label-before` | Mixin applied to label before pseudo element | {}
 `--paper-input-container-label-after` | Mixin applied to label after pseudo element (useful for required asterisk) | {}
+
+This element applies the mixin `--paper-font-common-base` but does not import `paper-styles/typography.html`.
+In order to apply the `Roboto` font to this element, make sure you've imported `paper-styles/typography.html`.
 
 This element is `display:block` by default, but you can set the `inline`
 attribute to make it `display:inline-block`.

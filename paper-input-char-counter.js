@@ -9,7 +9,6 @@ part of the polymer project is also subject to an additional IP rights grant
 found at http://polymer.github.io/PATENTS.txt
 */
 import '@polymer/polymer/polymer-legacy.js';
-import '@polymer/paper-styles/typography.js';
 
 import {Polymer} from '@polymer/polymer/lib/legacy/polymer-fn.js';
 import {html} from '@polymer/polymer/lib/utils/html-tag.js';
@@ -33,6 +32,9 @@ The following mixin is available for styling:
 Custom property | Description | Default
 ----------------|-------------|----------
 `--paper-input-char-counter` | Mixin applied to the element | `{}`
+
+This element applies the mixin `--paper-font-common-base` but does not import `paper-styles/typography.html`.
+In order to apply the `Roboto` font to this element, make sure you've imported `paper-styles/typography.html`.
 */
 Polymer({
   /** @override */

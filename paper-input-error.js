@@ -10,7 +10,6 @@ found at http://polymer.github.io/PATENTS.txt
 */
 import '@polymer/polymer/polymer-legacy.js';
 import '@polymer/paper-styles/default-theme.js';
-import '@polymer/paper-styles/typography.js';
 
 import {Polymer} from '@polymer/polymer/lib/legacy/polymer-fn.js';
 import {html} from '@polymer/polymer/lib/utils/html-tag.js';
@@ -36,6 +35,9 @@ Custom property | Description | Default
 ----------------|-------------|----------
 `--paper-input-container-invalid-color` | The foreground color of the error | `--error-color`
 `--paper-input-error` | Mixin applied to the error | `{}`
+
+This element applies the mixin `--paper-font-common-base` but does not import `paper-styles/typography.html`.
+In order to apply the `Roboto` font to this element, make sure you've imported `paper-styles/typography.html`.
 */
 Polymer({
   /** @override */
